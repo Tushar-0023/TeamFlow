@@ -1,10 +1,10 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:4000/api",
+baseURL: "https://teamflow-backend-ftdj.onrender.com/api"
 });
 
-// ADD TOKEN AUTOMATICALLY
+// ADD TOKEN AUTOMATICALLY      
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");
 
