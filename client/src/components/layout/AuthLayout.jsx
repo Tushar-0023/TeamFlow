@@ -11,7 +11,7 @@ export default function AuthLayout() {
         background: "#f4f6f9",
       }}
     >
-      <div style={{ width: "100%", maxWidth: "420px" }}>
+      <div style={{ width: "100%" }}>
         <Outlet />
       </div>
     </div>

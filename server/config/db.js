@@ -29,12 +29,12 @@ const testConnection = async () => {
 
     await connection.query("SELECT 1");
 
-    console.log("✅ TiDB Connected Successfully");
+    console.log("TiDB Connected Successfully");
 
     connection.release();
 
   } catch (error) {
-    console.error("❌ TiDB Connection Failed");
+    console.error("TiDB Connection Failed");
     console.error(error.message);
   }
 };
